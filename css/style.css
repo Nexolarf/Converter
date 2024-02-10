@@ -1,0 +1,206 @@
+/*===========================SELECT===========================*/
+
+select {
+    border-color: #30E3CA;
+    color: #30E3CA;
+    cursor: pointer;
+    font-family: TtSquaresCondensed;
+    font-size: 20px;
+    background-color: #101010;
+    border-radius: 5px;
+    width: 59px
+}
+
+.selectTXT {
+    color: #30E3CA;
+    font-family: TtSquaresCondensed;
+    font-size: 18px;
+}
+
+/*===========================BUTTON===========================*/
+
+button {
+    border-color: #0F4C75;
+    color: #3282B8;
+    cursor: pointer;
+    background-color: #101010;
+    font-family: TekturTight;
+    font-size: 20px;
+    height: 32px;
+    border-radius: 5px
+}
+
+.button2 {
+    border-color: #574B90;
+    font-family: TtSquaresCondensed;
+    color: #9E579D;
+    background-color: black;
+}
+
+/*===========================FONTS===========================*/
+
+@font-face {
+    font-family: "TekturTight";
+    src: url("./font/TekturTight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "TtSquaresCondensed";
+    src: url("./font/TtSquaresCondensed.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*===========================TRANSLATE===========================*/
+
+.trans {
+    width: 350px;
+    border-color: 11999E;
+}
+
+.translation {
+    font-size: 20px;
+    cursor: pointer;
+    color: #E4F9F5;
+}
+
+
+/*===========================OTHER BLOCKS===========================*/
+
+div {
+    cursor: default;
+    display: inline-block;
+}
+
+
+body {
+    font-family: TekturTight;
+    background-color: #1B262C;
+}
+
+table {
+    background-color: #1B262C;
+    border: thick double;
+    border-radius: 10px;
+    border-spacing: 7px;
+    float: left;
+    height: 270px;
+    overflow: auto;
+}
+
+
+/*===========================OTHER CLASSES===========================*/
+
+.line {
+    color: #9E579D;
+    font-size: 30px;
+}
+
+.background {
+    background-image: url('https://i.gifer.com/NvL.gif');
+    background-size: 1000px;
+    width: 1000px;
+    height: 500px;
+    text-align: center;
+    padding:unset;
+} 
+.max-width {
+    width: 320px;
+}
+
+
+.title {
+    color: #11999E;
+    font-size: 25px;
+}
+
+.trans {
+    width: 345px;
+    border-color: #11999E
+}
+
+.translation {
+    font-size: 20px;
+    color: #E4F9F5;
+}
+
+.revers {
+    color: #9E579D;
+    border-color: #574B90;
+}
+
+.decision {
+    color: #9E579D;
+    font-size: 20px;
+    font-family: TtSquaresCondensed;
+}
+
+.main {
+    color: yellow;
+    font-size: 17.5px;
+    font-family: TtSquaresCondensed;
+}
+
+.mainB {
+    color: red;
+    font-size: 17.5px;
+    font-family: TtSquaresCondensed;
+}
+
+/*===========================OTHER IDENTIFIERS===========================*/
+
+
+#decision {
+    display: none;
+    border-color: yellow;
+}
+
+#result {
+    width: 135px;
+    overflow-x: auto;
+}
+
+#enter {
+    width: 135px;
+    overflow-x: auto;    
+}
+
+#decisionB {
+    display: none;
+    border-color: red;
+}
+
+/*===========================SCROLLBAR===========================*/
+
+.scollbar::-webkit-scrollbar-track {
+    background: linear-gradient(to left, white, rgb(108, 108, 108));
+    border-radius: 10px;
+}
+
+.scollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+.translation::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left, cyan, #11999E);
+}
+
+.scollbar::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+}
+
+#decisionB::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left,pink, red);
+}
+
+#decision::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left, yellow, gold);
+}
+
+#saving::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left, lightgreen, green);
+}
+

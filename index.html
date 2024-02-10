@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукт</title>
+    <script src=./js/functions.js></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+        <!--===========================TRANSLATE===========================-->
+        <table class='trans'>
+            <tr>
+                <td colspan=3 style='text-align: center;'>
+                    <div class='title max-width'>Перевод из одной системы счисления в другую</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="select">
+                    <select id='select1' onchange='getValue1(this.value)'></select>
+                    <div id='select1.txt' class='selectTXT'>-ричный</div>
+                </td>
+                <td class='line'><button onclick="reverse()" class="revers">⇋</button></td>
+                <td class="select">
+                    <select id='select2' onchange='getValue2(this.value)'></select>
+                    <div id='select2.txt' class='selectTXT'>-ичный</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id='enter' class="translation scollbar" onclick="navigator.clipboard.writeText(this.innerHTML)" title="Скопировать?">Введите число</div>
+                </td>
+                <td class='line'> &#8658; </td>
+                <td>
+                    <div id='result' class="translation scollbar" onclick="navigator.clipboard.writeText(this.innerHTML)" title="Скопировать?">Ответ</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan=3 class='max-width box1'></td>
+            </tr>
+            <tr>
+                <td colspan=3>
+                    <button onclick='del()' class='button2'>&#9003;</button>
+                    <button onclick='erase()' class='button2'>Стереть</button>
+                    <input type="checkbox" class="checkbox" onchange="decisionON(this.checked)" checked>
+                    <div class='decision'>Решение</div>
+                </td>
+            </tr>
+        </table>
+    
+        <!--===========================DECISION===========================-->
+        <!-----B----->
+        <table id="decisionB" class="scollbar">
+            <tr class="mainB">
+                <td>
+                    Умножение
+                </td>
+                <td>
+                    Произ-<br>
+                    ведение
+                </td>
+                <td>
+                    Ответ
+                </td>
+            </tr>
+        </table>
+        <!-----A----->
+        <table id="decision" class="scollbar">
+            <tr class="main">
+                <td>
+                    Деление
+                </td>
+                <td>
+                    Целое <br> частное
+                </td>
+                <td>
+                    Остаток
+                </td>
+            </tr>
+        </table>
+    <script src=./js/index.js></script>
+</body>
+
+</html>
